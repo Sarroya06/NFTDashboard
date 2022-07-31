@@ -1,4 +1,4 @@
-<div class="side-nav-content">
+<!-- <div class="side-nav-content">
   <ul class="nav-list" ngClass="{'nav-list-open':sideNavStatus}">
     <li class="nav-list-item" *ngFor="let item of list">
       <i class={{item.icon}}></i>
@@ -7,4 +7,96 @@
       </span>
     </li>
   </ul>
+</div> -->
+
+<div class="side-nav-content">
+  <ul class="nav-list" ngClass="{'nav-list-open':sideNavStatus}">
+    <li class="nav-list-item">
+      <i class="fa-solid fa-house"></i>
+      <span>
+        <a routerLink="/dashboard">Dashboard</a>
+      </span>
+    </li>
+
+
+    <li class="nav-list-item" >
+      <i class="fa-solid fa-store"></i>
+      <span>
+        <a routerLink="/Marketplace">MarketPlace</a>
+      </span>
+    </li>
+
+    <h5 style="color: black;">Profile</h5>
+
+    <li class="nav-list-item" >
+      <i class='fa-solid fa-briefcase'></i>
+      <span>
+        <a routerLink="">My NFTs</a>
+      </span>
+    </li>
+
+
+    <li class="nav-list-item">
+      <i class='fa-solid fa-wallet'></i>
+      <span>
+        <a routerLink="">Wallet</a>
+      </span>
+    </li>
+
+    <li class="nav-list-item">
+      <i class='fa-solid fa-heart'></i>
+      <span>
+        <a routerLink="">Favourites</a>
+      </span>
+    </li>
+
+    <li class="nav-list-item">
+      <i class='fa-solid fa-clock-rotate-left'></i>
+      <span>
+        <a routerLink="">History</a>
+      </span>
+    </li>
+
+    <li class="nav-list-item">
+      <i class='fa-solid fa-gear'></i>
+      <span>
+        <a routerLink="">settings</a>
+      </span>
+    </li>
+
+    <h5 style="color: black;">Others</h5>
+
+    <li class="nav-list-item">
+      <i class='fa-solid fa-arrow-right-from-bracket'></i>
+      <span>
+        <a routerLink="">Logout</a>
+      </span>
+    </li>
+  </ul>
 </div>
+
+<!-- <mat-nav-list>
+
+  <a mat-list-item routerLink="/dashboard" routerLinkActive="list-item-active">
+    <mat-icon>dashboard</mat-icon>Dashboard
+  </a>
+
+  <a mat-list-item routerLink="/home" routerLinkActive="list-item-active">
+    <mat-icon>speaker</mat-icon>Marketplace
+  </a>
+
+  <h1 matSubheader class="mt-2">Profile</h1>
+  <a mat-list-item><mat-icon>business_center</mat-icon>My NFTs</a>
+  <a mat-list-item><mat-icon>account_balance_wallet</mat-icon>Wallet</a>
+  <a mat-list-item><mat-icon>favorite_border</mat-icon>Favourites</a>
+  <a mat-list-item><mat-icon>history</mat-icon>History</a>
+  <a mat-list-item><mat-icon>settings</mat-icon>Settings</a>
+  <h1 matSubheader class="mt-2">Other</h1>
+  <a mat-list-item
+    ><mat-slide-toggle></mat-slide-toggle>&nbsp;&nbsp;&nbsp;Mode
+  </a>
+    <button mat-menu-item>
+      <mat-icon>exit_to_app</mat-icon>
+      Logout
+    </button>
+</mat-nav-list> -->
