@@ -1,5 +1,137 @@
-<nav class="navbar navbar-expand navbar-dark px-2">
-  <div class="side-nav-button p-2 me-3 text-dark" style="font-size: 20px;" (click)="SideNavToggled()">
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 headcol">
+      <div class="side-nav-button p-2 me-3 text-dark" style="font-size: 20px;" (click)="SideNavToggled()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <a class="nav-brand ps-2" routerLink="">MasarratFatima</a>
+      <h6 class="ms-5">Hello ABC,<br> Welcome Back</h6>
+    </div>
+    <div class="col-md-6 headcol">
+
+      <form class="d-flex ">
+        <input class="form-control me-2" style="font-size:smaller;width: 400px;" type="search" placeholder="Search  For NFT...">
+      </form>
+
+      <button class="btn btn-sm btn-dark" style="border-radius:7px; margin-left: 25px;" type="submit">Create</button>
+      <div class="toggle-btn active">
+        <input type="checkbox"  checked class="cb-value" />
+        <span class="round-btn"></span>
+      </div>
+    </div>
+
+
+
+    <div class="col-md-2 headcol">
+
+
+      <!--div class="profile-logo dropdown mx-3">
+        <img class="user-img dropdown-toggle" data-bs-toggle="dropdown" src="/assets/img/profiles/India_Flag_Emoji.png" alt="">
+
+        <ul class="dropdown-menu dropdown-menu">
+          <li><a href="" class="dropdown-item">Sign Up</a></li>
+          <li><a href="" class="dropdown-item">Log In</a></li>
+          <li><a href="" class="dropdown-item">Your Profile</a></li>
+          <li><a href="" class="dropdown-item">Logout</a></li>
+        </ul>
+      </div-->
+      <div class="position-relative d-none d-sm-inline-block countrycstm">
+        <dl id="country-select" class="dropdown">
+           <dt><a href="javascript:void(0);"><span><span style="background-position:0px 0px"></span></span></a></dt>
+           <dd>
+           <ul style="display: none;">
+             <li><a cunt_code="+91" href="javascript:void(0);"><span style="background-position:0px -0px"></span></a></li>
+             <li><a cunt_code="+1" href="javascript:void(0);"><span style="background-position:0px -50px"></span></a></li>
+
+             <li><a cunt_code="+971" href="javascript:void(0);"><span style="background-position:0px -99px"></span></a></li>
+
+
+           </ul>
+           </dd>
+         </dl>
+       </div>
+      <div class="position-relative d-inline-block">
+        <button class="header-icon btn btn-empty" type="button" id="notificationButton"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+        <i class="fa-regular fa-bell"></i>
+            <!-- <span class="count">3</span> -->
+        </button>
+        <div class="dropdown-menu dropdown-menu-right mt-3 position-absolute" id="notificationDropdown">
+            <div class="scroll">
+                <div class="d-flex flex-row mb-3 pb-3 border-bottom">
+                    <a href="#">
+                        <img src="img/profiles/l-2.jpg" alt="Notification Image"
+                            class="img-thumbnail list-thumbnail xsmall border-0 rounded-circle" />
+                    </a>
+                    <div class="pl-3">
+                        <a href="#">
+                            <p class="font-weight-medium mb-1">Joisse Kaycee just sent a new comment!</p>
+                            <p class="text-muted mb-0 text-small">09.04.2018 - 12:45</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex flex-row mb-3 pb-3 border-bottom">
+                    <a href="#">
+                        <img src="img/notifications/1.jpg" alt="Notification Image"
+                            class="img-thumbnail list-thumbnail xsmall border-0 rounded-circle" />
+                    </a>
+                    <div class="pl-3">
+                        <a href="#">
+                            <p class="font-weight-medium mb-1">1 item is out of stock!</p>
+                            <p class="text-muted mb-0 text-small">09.04.2018 - 12:45</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex flex-row mb-3 pb-3 border-bottom">
+                    <a href="#">
+                        <img src="img/notifications/2.jpg" alt="Notification Image"
+                            class="img-thumbnail list-thumbnail xsmall border-0 rounded-circle" />
+                    </a>
+                    <div class="pl-3">
+                        <a href="#">
+                            <p class="font-weight-medium mb-1">New order received! It is total $147,20.</p>
+                            <p class="text-muted mb-0 text-small">09.04.2018 - 12:45</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex flex-row mb-3 pb-3 ">
+                    <a href="#">
+                        <img src="img/notifications/3.jpg" alt="Notification Image"
+                            class="img-thumbnail list-thumbnail xsmall border-0 rounded-circle" />
+                    </a>
+                    <div class="pl-3">
+                        <a href="#">
+                            <p class="font-weight-medium mb-1">3 items just added to wish list by a user!
+                            </p>
+                            <p class="text-muted mb-0 text-small">09.04.2018 - 12:45</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <div class="profile-logo dropstart mx-3">
+        <img class="user-img dropdown-toggle" data-bs-toggle="dropdown" src="/assets/img/profiles/l-1.jpg" alt="">
+        <!-- <button class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">
+          Himanshu
+        </button> -->
+        <ul class="dropdown-menu dropdown-menu">
+          <li><a href="" class="dropdown-item">Sign Up</a></li>
+          <li><a href="" class="dropdown-item">Log In</a></li>
+          <li><a href="" class="dropdown-item">Your Profile</a></li>
+          <li><a href="" class="dropdown-item">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <nav class="navbar navbar-expand navbar-dark px-2"> -->
+  <!-- <div class="side-nav-button p-2 me-3 text-dark" style="font-size: 20px;" (click)="SideNavToggled()">
     <i class="fa-solid fa-bars"></i>
   </div>
 
@@ -11,9 +143,9 @@
 
 
 
-  <button class="btn btn-sm btn-dark" style="border-radius:7px; margin-left: 50px;" type="submit">Create</button>
+  <button class="btn btn-sm btn-dark" style="border-radius:7px; margin-left: 50px;" type="submit">Create</button> -->
 
-  <label class="custom-switch-btn" for="switchDark"><i class="iconsminds-half-moon
+  <!-- <label class="custom-switch-btn" for="switchDark"><i class="iconsminds-half-moon
     "></i></label>
 
   <div class="profile-logo dropdown mx-5">
@@ -27,19 +159,79 @@
     </ul>
   </div>
 
-  <i class="fa-regular fa-bell"></i>
+  <div class="position-relative d-inline-block">
+    <button class="header-icon btn btn-empty" type="button" id="notificationButton"
+    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+    <i class="fa-regular fa-bell"></i>
+        <span class="count">3</span>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right mt-3 position-absolute" id="notificationDropdown">
+        <div class="scroll">
+            <div class="d-flex flex-row mb-3 pb-3 border-bottom">
+                <a href="#">
+                    <img src="img/profiles/l-2.jpg" alt="Notification Image"
+                        class="img-thumbnail list-thumbnail xsmall border-0 rounded-circle" />
+                </a>
+                <div class="pl-3">
+                    <a href="#">
+                        <p class="font-weight-medium mb-1">Joisse Kaycee just sent a new comment!</p>
+                        <p class="text-muted mb-0 text-small">09.04.2018 - 12:45</p>
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex flex-row mb-3 pb-3 border-bottom">
+                <a href="#">
+                    <img src="img/notifications/1.jpg" alt="Notification Image"
+                        class="img-thumbnail list-thumbnail xsmall border-0 rounded-circle" />
+                </a>
+                <div class="pl-3">
+                    <a href="#">
+                        <p class="font-weight-medium mb-1">1 item is out of stock!</p>
+                        <p class="text-muted mb-0 text-small">09.04.2018 - 12:45</p>
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex flex-row mb-3 pb-3 border-bottom">
+                <a href="#">
+                    <img src="img/notifications/2.jpg" alt="Notification Image"
+                        class="img-thumbnail list-thumbnail xsmall border-0 rounded-circle" />
+                </a>
+                <div class="pl-3">
+                    <a href="#">
+                        <p class="font-weight-medium mb-1">New order received! It is total $147,20.</p>
+                        <p class="text-muted mb-0 text-small">09.04.2018 - 12:45</p>
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex flex-row mb-3 pb-3 ">
+                <a href="#">
+                    <img src="img/notifications/3.jpg" alt="Notification Image"
+                        class="img-thumbnail list-thumbnail xsmall border-0 rounded-circle" />
+                </a>
+                <div class="pl-3">
+                    <a href="#">
+                        <p class="font-weight-medium mb-1">3 items just added to wish list by a user!
+                        </p>
+                        <p class="text-muted mb-0 text-small">09.04.2018 - 12:45</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
   <div class="profile-logo dropstart mx-5">
-    <img class="user-img dropdown-toggle" data-bs-toggle="dropdown" src="/assets/img/profiles/l-1.jpg" alt="">
+    <img class="user-img dropdown-toggle" data-bs-toggle="dropdown" src="/assets/img/profiles/l-1.jpg" alt=""> -->
     <!-- <button class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">
       Himanshu
     </button> -->
-    <ul class="dropdown-menu dropdown-menu">
+    <!-- <ul class="dropdown-menu dropdown-menu">
       <li><a href="" class="dropdown-item">Sign Up</a></li>
       <li><a href="" class="dropdown-item">Log In</a></li>
       <li><a href="" class="dropdown-item">Your Profile</a></li>
       <li><a href="" class="dropdown-item">Logout</a></li>
     </ul>
-  </div>
+  </div> -->
 
-</nav>
+<!-- </nav> -->
