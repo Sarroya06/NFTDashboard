@@ -6,8 +6,9 @@ app-header{
   position: fixed;
   width: 100%;
   top: 0px;
-  padding-top: 10px;
-  height: 4rem;
+  background: #fff;
+  padding-top: 5px;
+  height: 70px;
   z-index: 2;
   box-shadow: 2px 2px 2px #ccc;
 }
@@ -18,15 +19,20 @@ main{
   z-index: 1;
 }
 app-sidenav {
-  position: absolute;
+  position: fixed;
   left: 0rem;
+  top: 74px;
   width: 0px;
   height: calc(100vh - 4rem);
-  background-color: #fff;
+  background-color: transparent;
   /* border-top: 1px solid white; */
   overflow-x: hidden;
   white-space: nowrap;
   transition: width 250ms ease-in;
+
+}
+app-dashboard {
+    height: calc(100vh - 4rem);
 
 }
 .app-sidenav-open{
@@ -45,6 +51,44 @@ app-sidenav {
   left: 250px;
 }
 
+
+/* width */
+.app-sidenav-open::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.dark .app-sidenav-open::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.dark .app-sidenav-open::-webkit-scrollbar-thumb {
+  background: rgb(49, 47, 47);
+  border-radius: 7px;
+}
+
+/* Handle on hover */
+.app-sidenav-open::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Scroll bar for Dark theme */
+.app-sidenav-open::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+/* Handle */
+.app-sidenav-open::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 7px;
+}
+
+/* Handle on hover */
+.app-sidenav-open::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 /* width */
 .app-sidenav-open::-webkit-scrollbar {

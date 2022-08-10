@@ -46,7 +46,7 @@ export class CreateNftComponent implements OnInit {
     console.log('file', this.file);
   }
 
-  users: any = [];
+  users:any = [];
 
   constructor(
     private userData: SellerService,

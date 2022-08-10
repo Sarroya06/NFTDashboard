@@ -15,6 +15,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { CreateNftComponent } from './create-nft/create-nft.component';
 import { SellerItemComponent } from './seller-item/seller-item.component';
 
+import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -30,14 +31,17 @@ import { HttpClientModule } from '@angular/common/http';
     HistoryComponent,
     SettingsComponent,
     SellerItemComponent,
+    CreateNftComponent
   ],
 
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
 
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
